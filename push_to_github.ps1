@@ -35,12 +35,12 @@ git commit -m "Initial commit: AI Agent Platform with NewsBot and ComplianceSME"
 Write-Host "`nSetting up remote..." -ForegroundColor Yellow
 $remoteExists = git remote get-url origin 2>$null
 if ($LASTEXITCODE -ne 0) {
-    git remote add origin https://github.com/Jnabagel/lark-newsbot.git
-    Write-Host "Remote added: https://github.com/Jnabagel/lark-newsbot.git" -ForegroundColor Green
+    git remote add origin https://github.com/jnabagel/lark-newsbot.git
+    Write-Host "Remote added: https://github.com/jnabagel/lark-newsbot.git" -ForegroundColor Green
 } else {
     Write-Host "Remote already exists: $remoteExists" -ForegroundColor Yellow
-    git remote set-url origin https://github.com/Jnabagel/lark-newsbot.git
-    Write-Host "Remote updated to: https://github.com/Jnabagel/lark-newsbot.git" -ForegroundColor Green
+    git remote set-url origin https://github.com/jnabagel/lark-newsbot.git
+    Write-Host "Remote updated to: https://github.com/jnabagel/lark-newsbot.git" -ForegroundColor Green
 }
 
 # Set main branch
@@ -57,7 +57,7 @@ git push -u origin main
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "`n=== Success! Project pushed to GitHub ===" -ForegroundColor Green
-    Write-Host "Repo: https://github.com/Jnabagel/lark-newsbot" -ForegroundColor Cyan
+    Write-Host "Repo: https://github.com/jnabagel/lark-newsbot" -ForegroundColor Cyan
 } else {
     Write-Host "`n=== Push failed. Check error messages above. ===" -ForegroundColor Red
     Write-Host "Common issues:" -ForegroundColor Yellow

@@ -8,7 +8,7 @@
    .\push_to_github.ps1
    ```
 3. When prompted for credentials:
-   - **Username**: `Jnabagel`
+   - **Username**: `jnabagel`
    - **Password**: Use a **Personal Access Token** (not your GitHub password)
 
 ## Option 2: Manual Commands
@@ -32,7 +32,7 @@ git add .
 git commit -m "Initial commit: AI Agent Platform with NewsBot and ComplianceSME"
 
 # Add remote
-git remote add origin https://github.com/Jnabagel/lark-newsbot.git
+git remote add origin https://github.com/jnabagel/lark-newsbot.git
 
 # Set main branch
 git branch -M main
@@ -56,7 +56,7 @@ GitHub requires a **Personal Access Token** instead of a password:
 ## Verify Success
 
 After pushing, check:
-- https://github.com/Jnabagel/lark-newsbot
+- https://github.com/jnabagel/lark-newsbot
 - Make sure `.env` is **NOT** visible (it should be ignored)
 - All other files should be there
 
