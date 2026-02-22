@@ -57,7 +57,7 @@ git push -u origin main
      ```
    - **Start Command**:
      ```bash
-     gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT
+     python -m gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT
      ```
    - **Instance Type**: `Free` (or `Starter` for $7/month - no sleep)
 

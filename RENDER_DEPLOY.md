@@ -46,7 +46,7 @@ If the repo is the **parent** folder (e.g. `ClaudeCode`), ensure Render is set t
      ```
    - **Start Command**:
      ```bash
-     gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT
+     python -m gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT
      ```
 
 4. **Instance type**: Free (or paid if you want no sleep).
@@ -157,7 +157,7 @@ For NewsBot and Lark-only use, this is fine without changing anything.
 - [ ] Code on GitHub
 - [ ] Render Web Service created (Python, correct root dir)
 - [ ] Build: `pip install -r requirements.txt`
-- [ ] Start: `gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT`
+- [ ] Start: `python -m gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT`
 - [ ] All env vars set in Render (no `.env` in repo)
 - [ ] Deploy successful, app **Live**
 - [ ] Lark Request URL = `https://your-render-url/lark/webhook`

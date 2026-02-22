@@ -1,0 +1,5 @@
+Use this as the Start Command in Render (Settings → Start Command):
+
+python -m gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT
+
+This ensures gunicorn is found (runs via the same Python that has packages installed).
